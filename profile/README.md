@@ -1,12 +1,22 @@
-## Hi there 👋
+# Eline
 
-<!--
+Eline menghubungkan keluarga dan caregiver dengan Eline Vest serta Eline Radar untuk pemantauan perangkat dan notifikasi keselamatan di rumah.
 
-**Here are some ideas to get you started:**
+## Repositories
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+| Repository | Stack | Fungsi |
+| --- | --- | --- |
+| [Eline-Mobile](https://github.com/Ellinee/Eline-Mobile) | Expo, React Native, TypeScript | Aplikasi rumah, perangkat, akun, dan notifikasi |
+| [Eline-Backend](https://github.com/Ellinee/Eline-Backend) | Express, Prisma, PostgreSQL | API, autentikasi, event perangkat, dan push notification |
+| [Eline-Webiste](https://github.com/Ellinee/Eline-Webiste) | Next.js, React, TypeScript | Website produk, informasi privasi, dan unduhan aplikasi |
+| [Eline-mmWave-IoT](https://github.com/Ellinee/Eline-mmWave-IoT) | ESP32, Arduino, LD2450 | Prototype firmware Eline Radar |
+
+## Sistem
+
+Arsitektur yang dituju menghubungkan aplikasi dan perangkat melalui backend, dengan PostgreSQL untuk data utama dan Firebase Cloud Messaging untuk notifikasi.
+
+Redis, Kafka, Prometheus, Grafana, dan bucket privat baru diprovisikan di Railway; belum terintegrasi dengan aplikasi. Integrasi firmware, pairing perangkat, dan validasi deteksi jatuh radar masih dalam pengembangan.
+
+## Pengembangan
+
+Petunjuk menjalankan aplikasi, konfigurasi environment, dan pemeriksaan tersedia di README masing-masing repository. Jangan menyimpan credential, token, atau kunci perangkat di source control.
