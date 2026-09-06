@@ -1,22 +1,22 @@
 # Eline
 
-Eline menghubungkan keluarga dan caregiver dengan Eline Vest serta Eline Radar untuk pemantauan perangkat dan notifikasi keselamatan di rumah.
+Eline connects families and caregivers with Eline Vest and Eline Radar for device monitoring and safety notifications at home.
 
 ## Repositories
 
-| Repository | Stack | Fungsi |
+| Repository | Stack | Purpose |
 | --- | --- | --- |
-| [Eline-Mobile](https://github.com/Ellinee/Eline-Mobile) | Expo, React Native, TypeScript | Aplikasi rumah, perangkat, akun, dan notifikasi |
-| [Eline-Backend](https://github.com/Ellinee/Eline-Backend) | Express, Prisma, PostgreSQL | API, autentikasi, event perangkat, dan push notification |
-| [Eline-Webiste](https://github.com/Ellinee/Eline-Webiste) | Next.js, React, TypeScript | Website produk, informasi privasi, dan unduhan aplikasi |
-| [Eline-mmWave-IoT](https://github.com/Ellinee/Eline-mmWave-IoT) | ESP32, Arduino, LD2450 | Prototype firmware Eline Radar |
+| [Eline-Mobile](https://github.com/Ellinee/Eline-Mobile) | Expo, React Native, TypeScript | Household, device, account, and notification management |
+| [Eline-Backend](https://github.com/Ellinee/Eline-Backend) | Express, Prisma, PostgreSQL | API, authentication, device events, and push notifications |
+| [Eline-Webiste](https://github.com/Ellinee/Eline-Webiste) | Next.js, React, TypeScript | Product website, privacy information, and application downloads |
+| [Eline-mmWave-IoT](https://github.com/Ellinee/Eline-mmWave-IoT) | ESP32, Arduino, LD2450 | Prototype Eline Radar firmware |
 
-## Sistem
+## System
 
-Arsitektur yang dituju menghubungkan aplikasi dan perangkat melalui backend, dengan PostgreSQL untuk data utama dan Firebase Cloud Messaging untuk notifikasi.
+The target architecture connects applications and devices through the backend, with PostgreSQL as the primary data store and Firebase Cloud Messaging for notifications.
 
-Redis, Kafka, Prometheus, Grafana, dan bucket privat baru diprovisikan di Railway; belum terintegrasi dengan aplikasi. Integrasi firmware, pairing perangkat, dan validasi deteksi jatuh radar masih dalam pengembangan.
+Redis, Kafka, Prometheus, Grafana, and private object storage have been provisioned on Railway but are not yet integrated with the application. Firmware integration, device pairing, and validation of radar-based fall detection remain in development.
 
-## Pengembangan
+## Development
 
-Petunjuk menjalankan aplikasi, konfigurasi environment, dan pemeriksaan tersedia di README masing-masing repository. Jangan menyimpan credential, token, atau kunci perangkat di source control.
+Each repository's README covers setup, environment configuration, and available checks. Never commit credentials, tokens, or device keys to source control.
